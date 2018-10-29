@@ -10,6 +10,7 @@
     <form action="class.php" method="post">
         Masukan angka 1<input type="text" name="input1"><br>
         Masukan angka 2<input type="text" name="input2"><br>
+        Masukan angka 3<input type="date" name="input3"><br>
         Pilih Operasi
         <select name="operasi">
             <option value="+">+</option>
