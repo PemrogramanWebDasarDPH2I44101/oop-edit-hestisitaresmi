@@ -24,6 +24,7 @@ class Kalkulator{
     public function kurang(){        
         $angka1 = $_POST['input1'];
         $angka2 = $_POST['input2'];
+        $angka3 = $_POST['input3'];
         $sql    = "DELETE FROM siswa WHERE nim=$angka2";        
         mysqli_query($this->conn, $sql);
 
@@ -37,6 +38,18 @@ class Kalkulator{
             $sql = "SELECT * FROM siswa where nim = '$nim'";
             return mysqli_query($this->conn,$sql);
 
+    }
+
+    public function update(){
+        $angka1 = $_POST['input1'];
+        $angka2 = $_POST['input2'];
+        $angka3 = $_POST['input3'];
+         
+        $sql ="UPDATE siswa SET nama='$angka1',nim='$angka2', tgal_lahir='$angka3' where nim='$angka2'";
+        mysqli_query($this->conn,$sql);
+                
+
+            
     }
 
 }
@@ -53,6 +66,10 @@ if($operasi == "-"){
 if($operasi == "/"){
     $result = $kalkulator->bagi();
     require_once("data.php");
+}
+if($operasi == "*"){
+    $result = $kalkulator->update();
+    echo "Data Telah Terupdate";
 }
     
 

@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Oct 29, 2018 at 10:33 AM
+-- Generation Time: Oct 29, 2018 at 02:56 PM
 -- Server version: 10.1.29-MariaDB
 -- PHP Version: 7.2.0
 
@@ -40,20 +40,22 @@ CREATE TABLE `siswa` (
 --
 
 INSERT INTO `siswa` (`id`, `nama`, `nim`, `tgal_lahir`) VALUES
-(2, 'Hesti Sitaresmi', '6701174045', '2018-11-14'),
 (3, 'Deksa Titah Prasojo', '56789', '2018-10-20'),
 (4, 'Yasa Suryo Atmojo', '6701175643', '2018-10-23'),
-(10, 'Yasa sur', '61316236', '2018-10-27'),
-(12, 'Sunarti', '6701177893', '2018-10-26'),
+(10, 'Yasa suryo A', '61316236', '2018-10-27'),
+(12, 'Su nartiii', '6701177893', '2018-10-26'),
 (13, 'Yasaaaa s', '6701878732', '2018-10-29'),
-(14, 'nananini', '1251652', '2018-01-08'),
-(15, 'Nama', '56', '0000-00-00'),
-(16, 'deksa', '1234', '2022-02-04'),
-(17, 'Hesti Sitaresmi', '6701174045', '2019-11-14'),
-(18, 'Hesti Sitaresmi', '6701174045', '2018-12-14'),
-(19, 'Hesti Sitaresmi', '6701174045', '2018-01-14'),
-(20, 'Hesti Sitaresmii', '6701174045', '2018-11-14'),
-(22, 'Deksa Titah Prasojo', '5678900', '2018-10-20');
+(14, 'nana nama', '1251652', '2018-01-08'),
+(16, 'Deksa Titah P', '1234', '2022-02-04'),
+(22, 'Deksa Titah Prasojo', '5678900', '2018-10-20'),
+(25, 'Yasaaaa saa', '6701878732', '2018-10-29'),
+(26, 'Kakak', '670117562', '2018-10-29'),
+(27, 'Yasaaaa suryo', '6701878732', '2018-10-29'),
+(28, 'Naha', '2018-10-29', '0000-00-00'),
+(29, 'haha', '16217', '2018-10-29'),
+(30, 'Su nartiii', '6701177893', '2018-10-26'),
+(31, 'Hesti Sitaresmi', '6701174045', '2018-10-29'),
+(32, 'nanaa', '656152', '2018-10-29');
 
 --
 -- Indexes for dumped tables
@@ -73,7 +75,7 @@ ALTER TABLE `siswa`
 -- AUTO_INCREMENT for table `siswa`
 --
 ALTER TABLE `siswa`
-  MODIFY `id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=23;
+  MODIFY `id` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=33;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
